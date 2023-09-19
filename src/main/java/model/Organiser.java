@@ -1,9 +1,9 @@
 package model;
 
-public class helper {
+public class Organiser {
     private String name;
 
-    public helper(String name) {
+    public Organiser(String name) {
         this.name = name;
     }
 }

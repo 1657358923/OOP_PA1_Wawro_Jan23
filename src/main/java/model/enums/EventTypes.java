@@ -1,6 +1,6 @@
 package model.enums;
 
-public enum eventTypes {
+public enum EventTypes {
     COCKTAIL_PARTY,
     WEDDING,
     CONFERENCE;
