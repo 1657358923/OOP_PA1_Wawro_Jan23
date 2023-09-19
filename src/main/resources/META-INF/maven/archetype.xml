@@ -1,0 +1,9 @@
+<archetype>
+  <id>OOP_PA1_Wawro_Jan23</id>
+  <sources>
+    <source>src/service.Main/java/App.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/AppTest.java</source>
+  </testSources>
+</archetype>
