@@ -8,4 +8,12 @@ public class Guest {
         this.guestID = guestID;
         this.hasGoodieBag = hasGoodieBag;
     }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "guestID=" + guestID +
+                ", hasGoodieBag=" + hasGoodieBag +
+                '}';
+    }
 }

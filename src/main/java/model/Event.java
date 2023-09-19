@@ -16,15 +16,44 @@ public class Event {
 
     public Event(EventTypes typeOfEvent, List<Helper> helpers, List<Organiser> organisers, List<Guest> guests) {
         this.typeOfEvent = typeOfEvent;
-        this.chiefOrganiser = getChiefOrganiser(organisers);
+        this.chiefOrganiser = randomChiefOrganiser(organisers);
         this.helpers = helpers;
         this.organisers = organisers;
         this.guests = guests;
     }
 
-    private Organiser getChiefOrganiser(List<Organiser> organisers) {
+    private Organiser randomChiefOrganiser(List<Organiser> organisers) {
         return organisers.get(rand.nextInt(organisers.size()));
     };
 
+    public Organiser getChiefOrganiser() {
+        return chiefOrganiser;
+    }
 
+    public EventTypes getTypeOfEvent() {
+        return typeOfEvent;
+    }
+
+    public List<Helper> getHelpers() {
+        return helpers;
+    }
+
+    public List<Organiser> getOrganisers() {
+        return organisers;
+    }
+
+    public List<Guest> getGuests() {
+        return guests;
+    }
+
+    @Override
+    public String toString() {
+        return "\nEvent{" +
+                ", typeOfEvent=" + typeOfEvent +
+                ", chiefOrganiser=" + chiefOrganiser +
+                ", helpers=" + helpers +
+                ", organisers=" + organisers +
+                ", guests=" + guests +
+                '}';
+    }
 }

@@ -1,12 +1,14 @@
 package service;
 
+import model.Event;
 import model.Helper;
 import model.Organiser;
 
 import java.util.List;
 
 public interface EventManager {
-    public boolean canEventStart(List<Helper> helpers, List<Organiser> organisers);
+    public boolean canEventStart(Event event);
+    public List<Event> generateEvents(int numberOfEvents);
 
     //EventAttendants.HELPERS //EventAttendants.ORGANISERS;
 }

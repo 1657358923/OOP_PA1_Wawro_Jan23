@@ -6,4 +6,11 @@ public class Helper {
     public Helper(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Helper{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
